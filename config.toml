@@ -3,7 +3,8 @@
 [ui]
 default-command = "log"
 pager = "cat"
-diff-editor = ["nvim", "-c", "DiffEditor $left $right $output"]
+editor = "nvim"
+#diff-editor = ["nvim", "-c", "DiffEditor ($left, $right, $output)"]
 
 [user]
 name = "eluzix"
