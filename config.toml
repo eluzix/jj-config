@@ -13,3 +13,8 @@ color = "always"
 
 [template-aliases]
 'format_timestamp(timestamp)' = 'timestamp.ago()'
+
+[signing]
+behavior = "own"
+backend = "gpg"
+key = "452ECCA0A809FBEC"
