@@ -1,5 +1,9 @@
 "$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
 
+[user]
+name = "eluzix"
+email = "eluzix@gmail.com"
+
 [ui]
 default-command = "log"
 pager = "cat"
@@ -7,7 +11,5 @@ editor = "nvim"
 color = "always"
 #diff-editor = ["nvim", "-c", "DiffEditor ($left, $right, $output)"]
 
-[user]
-name = "eluzix"
-email = "eluzix@gmail.com"
-
+[template-aliases]
+'format_timestamp(timestamp)' = 'timestamp.ago()'
