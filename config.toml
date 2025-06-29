@@ -6,7 +6,7 @@ email = "eluzix@gmail.com"
 
 [ui]
 default-command = "log"
-pager = "cat"
+pager = ":builtin"
 editor = "nvim"
 color = "always"
 #diff-editor = ["nvim", "-c", "DiffEditor ($left, $right, $output)"]
@@ -14,7 +14,12 @@ color = "always"
 [template-aliases]
 'format_timestamp(timestamp)' = 'timestamp.ago()'
 
+[aliases]
+l = ["log", "-r", "(main..@):: | (main..@)-"]
+origin = ["log", "-r", "main@origin.."]
+
 [signing]
 behavior = "own"
 backend = "gpg"
 key = "452ECCA0A809FBEC"
+
